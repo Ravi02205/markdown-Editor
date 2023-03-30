@@ -1,0 +1,60 @@
+*{
+  font-family: monospace;
+}
+
+.markDownEditor {
+  display: flex;
+  width: 90vw;
+  height: 90vh;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.input-container {
+  justify-content: center;
+  width: 50%;
+  padding: 10px;
+}
+.input-field textarea {
+    width: 95%;
+    height: 69vh;
+    border: none;
+    padding: 5px;
+    line-height: 23px;
+}
+
+.input-field textarea:focus{
+    outline: none;
+}
+
+.output {
+  width: 50%;
+  max-height: 83vh;
+  justify-self: center;
+  padding-left: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.markdown-output{
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: top center;
+  overflow-y: scroll;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+.output h2{
+  position: sticky;
+  top:0px
+}
+
+@media screen and (max-width:900px){
+  .markDownEditor{
+    flex-wrap: wrap;
+  }
+  .markDownEditor > *{
+    width: 100%;
+  }
+}

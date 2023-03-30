@@ -27,6 +27,24 @@
     outline: none;
 }
 
+
+.input-field textarea::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.input-field textarea::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.input-field textarea::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
 .output {
   width: 50%;
   max-height: 83vh;
@@ -45,6 +63,25 @@
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
 }
+
+
+.markdown-output::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.markdown-output::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.markdown-output::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
 .output h2{
   position: sticky;
   top:0px
